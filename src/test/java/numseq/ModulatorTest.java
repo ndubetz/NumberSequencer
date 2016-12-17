@@ -1,5 +1,6 @@
 package numseq;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -16,6 +17,7 @@ public class ModulatorTest {
     }
 
     @Test
+    @Ignore
     public void returnsFirstInstanceOfNonRepeatingSequence() throws Exception {
         List<Long> expectedList = Arrays.asList(0L, 10L, 8L, 6L, 8L);
         assertEquals(expectedList, new Modulator().modNRS(12, Arrays.asList(0L, 10L, 8L, 6L, 8L, 0L, 10L, 8L, 6L, 8L)));
